@@ -1,7 +1,10 @@
 html, body {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
@@ -14,7 +17,7 @@ html, body {
 
 #input {
     width: 300px;
-    height: 46px;
+    height: 38px;
     border-width: 0;
     border: 1px solid black;
     outline: none;
@@ -24,7 +27,7 @@ html, body {
 
 #add {
     height: 50px;
-    width: 50px;
+    width: 60px;
     border: 1px solid black;
     vertical-align: middle;
     font-size: 30px;
@@ -38,4 +41,51 @@ html, body {
 
 .to-dos {
     margin-top: 25px;
+}
+
+.to-dos li {
+    display: flex;
+    align-items: center;
+}
+
+input{
+    padding: 5px 10px;
+}
+
+span{
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+li button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: .5s;
+    text-transform: uppercase;
+    color: #FFF;   
+    font-weight: bold; 
+}
+
+li button:hover {
+    background-color: #FFF;
+    box-shadow: 0 0 5px black;
+    transition: .5s;
+}
+
+.btnDelete{
+    background-color: red;
+}
+
+.btnDelete:hover{
+    color: red;
+}
+
+.btnEdit {
+    background-color: green;
+}
+
+.btnEdit:hover{
+    color: green;
 }
